@@ -1,3 +1,6 @@
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+
 // экспорт массива данных пункта
 export const AccordionData = [
   {
@@ -20,3 +23,18 @@ export const AccordionData = [
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
   },
 ];
+
+export const AccordionItemStyles = {
+  titleBackground: "#800080",
+  titleColor: "#FFA500",
+  titleSize: "20px",
+  textColor: "#000000",
+  textBackground: "#FFFF00",
+};
+
+export const getAccordionIcon = (isExpanded) =>
+  isExpanded ? (
+    <ArrowUpwardIcon sx={{ color: "#ffffff" }} />
+  ) : (
+    <ArrowUpwardIcon sx={{ color: "#808080" }} />
+  );
